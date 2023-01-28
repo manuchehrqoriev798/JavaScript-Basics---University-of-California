@@ -6,12 +6,20 @@
 
 
 
-
+const myGoal = 'Financial Independence' // expression with value of a string
 const myProfile = {          // creats object
     myName: 'Manuchehr',     // key: value,
     mySurname: 'Qoriev',     // key: value,
-    myAge: 18                 
+    myAge: 18, 
+    myGoal: myGoal,          // connecting expression that the name of it and value was given before. Dublicate 
+    myGoal,                  // short type of Dublicate writing. Recomended to put them in the begining 
+    myUltimateGoal: myGoal,  // creating new key with value of the expression that was given
+    myInfo: {                // object inside of object
+        netWorth: 10^6,
+        mentalHealth: 'stable'
+    }                 
 }
+delete myProfile.myInfo.netWorth
 myProfile.myAdress = 'Naryn' // adding new value
 delete myProfile.myAdress    // deleting value
 console.log(myProfile)       // showed
