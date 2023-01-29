@@ -1,3 +1,4 @@
+//lesson: STYLE and NAMING
 // let myName                               // new style name                     // value of let can be changed AMAP
 // myName = 'Manuchehr'                     // its value
 // console.log(myName)                      // shows it
@@ -7,6 +8,7 @@
 
 
 
+//lesson: OBJECT
 // const myGoal = 'Financial Independence' // expression with value of a string
 // const myProfile = {          // creats object
 //     myName: 'Manuchehr',     // key: value,
@@ -45,31 +47,100 @@
 
 
 
-// Mutation 
-const a = 10
-let b = a
-b = 30 
-console.log(a) //10
-console.log(b) //30
+// // lesson: MUTATION 
+// const a = 10
+// let b = a
+// b = 30 
+// console.log(a) //10
+// console.log(b) //30
 
 
-const person = { // changing prepertie's value of object
-age: 21,
-name: 'Manu'
-}
-person.age = 22
-person.name =' Manuchehr'
-console.log(person.age)  // 22
-console.log(person.name) // Manuchehr
+// const person = { // changing prepertie's value of object
+// age: 21,
+// name: 'Manu'
+// }
+// person.age = 22
+// person.name =' Manuchehr'
+// console.log(person.age)  // 22
+// console.log(person.name) // Manuchehr
 
 
-const post = { //mutating object by adding change through copying object
-year: 12,
-authour: 'me'
-}
+// const post = { //mutating object by adding change through copying object
+// year: 12,
+// authour: 'me'
+// }
 
-const newPost = post
-newPost.year = 34             // changing property's value of the object through another it's copy
-newPost.authour = 'not me' 
-console.log(newPost.year)
-console.log(newPost.authour)
+// const newPost = post
+// newPost.year = 34             // changing property's value of the object through another it's copy
+// newPost.authour = 'not me' 
+// console.log(newPost.year)
+// console.log(newPost.authour) // getting acces through newPost copy of the object
+// console.log(post.year)
+// console.log(post.authour)    // getting acces through post copy of the object
+
+
+
+
+
+// // lesson:  how to avoid mutation     
+
+// // First: avoides mutation only from the Root Object
+// const main = {
+//     name: 'no mutaion yet',
+//     age: 22
+// }
+// const insideMain = main
+// insideMain.address = 'Earth'
+// insideMain.name = 'Inside first option'
+// const mainMutation = Object.assign({}, main)  //Second option:avoides mutation only from the Root Object - const mainMutation = {...main} 
+// mainMutation.name = 'Mutation happend'
+// console.log(main.name)                // object without mutation
+// console.log(mainMutation.name)        // new object that is connected to main object but they are not mutated
+// console.log(insideMain.name)
+// console.log(main.age)                 
+// console.log(mainMutation.age)         // both showing the same value because it was initially in the Root object and in the object of mainMutation
+// console.log(main.address)             
+// console.log(mainMutation.address)  
+// console.log(insideMain.address)       // three of them are showing the same value because if object has copy to another object and from another object  was shared a value it would be saved to all
+
+
+
+// console.log('Third option')
+// // Third Option: 
+// const post = {
+//     name: 'no mutaion yet',
+//     age: 22
+// }
+// const insidePost = post
+// insidePost.name = 'Inside third option'
+// const postMutation = JSON.parse(JSON.stringify(post))  
+// postMutation.name = 'Mutation happend'
+// console.log(post.name)               
+// console.log(postMutation.name)   
+// console.log(insidePost.name)  //bug: what is difirence between these three option of avoiding mutation  
+
+
+
+//lesson: FUNCTION
+
+let a = 5
+let b = 3
+let c 
+c = a + b         // two line of the same code, it can be opitmized
+console.log(c)     
+a = 10
+b = 20
+c = a + b         // two line of the same code, it can be opitmized
+console.log(c)
+
+
+let d = 5
+let e = 3
+function sum(a, b) {
+    const f = d + e
+    console.log(f)          // if you write sum it would automatically add and show the value
+} 
+sum(d, e)
+d = 10
+e = 20 
+sum(d, e)
