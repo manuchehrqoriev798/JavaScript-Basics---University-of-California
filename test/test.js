@@ -123,24 +123,60 @@
 
 //lesson: FUNCTION
 
-let a = 5
-let b = 3
-let c 
-c = a + b         // two line of the same code, it can be opitmized
-console.log(c)     
-a = 10
-b = 20
-c = a + b         // two line of the same code, it can be opitmized
-console.log(c)
+// let a = 5
+// let b = 3
+// let c 
+// c = a + b         // two line of the same code, it can be opitmized
+// console.log(c)     
+// a = 10
+// b = 20
+// c = a + b         // two line of the same code, it can be opitmized
+// console.log(c)
 
 
-let d = 5
-let e = 3
-function sum(a, b) {
-    const f = d + e
+let d = 8
+let e = 4
+function add(d, e) {
+    const f = d + e         
     console.log(f)          // if you write sum it would automatically add and show the value
 } 
-sum(d, e)
-d = 10
-e = 20 
-sum(d, e)
+function sub(d, e){
+    const g = d - e 
+    console.log(g)
+}
+function div(d, e){
+    const h = d / e
+    console.log(h)
+}
+function mul(d, e){
+    const i = d * e
+    console.log(i)
+}
+function perimeterOfRectangle(d, e){
+    const j = 2 * (d + e)
+    console.log(j)
+}
+function areaOfRectangle(d, e){
+    const k = d * e
+    console.log(k)
+}
+function perimeterOfSquare(d, e){
+    e = d
+    const l = e * 4
+    console.log(l) 
+}
+function areaOfSquare(d, e){
+    e = d
+    const m = e * e
+    console.log(m)
+}
+
+
+add(d, e)
+sub(d, e)
+div(d, e)
+mul(d, e)
+perimeterOfRectangle(d, e)
+areaOfRectangle(d, e)
+perimeterOfSquare(d, e)
+areaOfSquare(d, e)
