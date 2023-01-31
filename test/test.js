@@ -134,49 +134,97 @@
 // console.log(c)
 
 
-let d = 8
-let e = 4
-function add(d, e) {
-    const f = d + e         
-    console.log(f)          // if you write sum it would automatically add and show the value
-} 
-function sub(d, e){
-    const g = d - e 
-    console.log(g)
-}
-function div(d, e){
-    const h = d / e
-    console.log(h)
-}
-function mul(d, e){
-    const i = d * e
-    console.log(i)
-}
-function perimeterOfRectangle(d, e){
-    const j = 2 * (d + e)
-    console.log(j)
-}
-function areaOfRectangle(d, e){
-    const k = d * e
-    console.log(k)
-}
-function perimeterOfSquare(d, e){
-    e = d
-    const l = e * 4
-    console.log(l) 
-}
-function areaOfSquare(d, e){
-    e = d
-    const m = e * e
-    console.log(m)
-}
+
+// // EXAMPLES
+// let d = 8
+// let e = 4
+// function add(d, e) {
+//     const f = d + e         
+//     console.log(f)          // if you write sum it would automatically add and show the value
+// } 
+// function sub(d, e){
+//     const g = d - e 
+//     console.log(g)
+// }
+// function div(d, e){
+//     const h = d / e
+//     console.log(h)
+// }
+// function mul(d, e){
+//     const i = d * e
+//     console.log(i)
+// }
+// function perimeterOfRectangle(d, e){
+//     const j = 2 * (d + e)
+//     console.log(j)
+// }
+// function areaOfRectangle(d, e){
+//     const k = d * e
+//     console.log(k)
+// }
+// function perimeterOfSquare(d, e){
+//     e = d
+//     const l = e * 4
+//     console.log(l) 
+// }
+// function areaOfSquare(d, e){
+//     e = d
+//     const m = e * e
+//     console.log(m)
+// }
+// console.dir(areaOfSquare)
+
+// add(d, e)
+// sub(d, e)
+// div(d, e)
+// mul(d, e)
+// perimeterOfRectangle(d, e)
+// areaOfRectangle(d, e)
+// perimeterOfSquare(d, e)
+// areaOfSquare(d, e) 
 
 
-add(d, e)
-sub(d, e)
-div(d, e)
-mul(d, e)
-perimeterOfRectangle(d, e)
-areaOfRectangle(d, e)
-perimeterOfSquare(d, e)
-areaOfSquare(d, e)
+
+// function myFirstFn(a, b){
+//     let c
+//     a = a + 1
+//     c = a + b
+//     console.log(c) 
+//     return c            // after this line function stops working 
+
+// }
+// myFirstFn(20, 13) // 34
+
+// function myFn (){}
+// myFn() // underfined
+
+
+
+// MUTATED
+const personOne = {                             // there is an object with property age and value 19
+    name: 'Manu',
+    age: 19
+}
+const personTwo = {                             // there is an object with property age and value 18
+    name: 'Manu',
+    age: 18
+}
+function increaseAgePerson(NameOfPerson){       // function that increases age property by 1 
+    NameOfPerson.age += 1
+    return NameOfPerson
+}
+increaseAgePerson(personOne)  //mutated to object, not good    connecting link of object to the function                    
+increaseAgePerson(personTwo)  //mutated to object, not good    connecting link of object to the function 
+console.log(personOne.age)
+console.log(personTwo.age)                      // requesting to show the final result to the screen
+
+
+// UNMUTATED
+function changeNameOfThePerson(changeName){              
+    const changeNamePerson = Object.assign({}, changeName) // creating copy of the object
+    changeNamePerson.name = 'Manuchehr'
+    return changeNamePerson
+}
+const changeNamePerson = changeNameOfThePerson(personOne) // connecting copy of object to function
+console.log(personOne.name)
+console.log(changeNamePerson.name)
