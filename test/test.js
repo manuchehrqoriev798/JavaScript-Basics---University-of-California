@@ -246,28 +246,30 @@
 
 // lesson: Global and Local variables
 
-// let a                       // global variable
-// let b                       // global variable 
-// function myFn (){
-//     let b                   // local variable. Name of global and local variables can be the same
-//     a = 10
-//     b = true
-//     console.log(b)
-// } 
+let a                       // global variable
+let b                       // global variable 
+function myFn (){
+    let b                   // local variable. Name of global and local variables can be the same
+    b = true                // this b property is new
+    a = 10                  // search for a inside here couldnt find. search outside there is so this a is let a in the begining
+    console.log(b)
+} 
+myFn()                     // true because of console
+console.log(a)             // 10 because of let a in the first
+console.log(b)             // underfined because let b is local variable and let b in the begining does not have any value
+
+
+
+
+
+
+// const a = 10                 // constant value
+// function myFn (){            // function
+//     function insideMyFn(){   // function inside function
+//         console.log(a)       // result 10
+//         // insideMyFn()         // nothing happens because calling function inside of function is nothing
+//     }
+//     insideMyFn()             // сall funtion inside of big function in the big function
+// }
+// // insideMyFn()              // eror
 // myFn()
-// console.log(a)             // 10 because of let a in the first
-// console.log(b)             // underfined because let b is local variable and let b in the begining does not have any value
-
-
-
-
-const a = 10                 // constant value
-function myFn (){            // function
-    function insideMyFn(){   // function inside function
-        console.log(a)       // result 10
-        insideMyFn()         // nothing happens because calling function inside of function is nothing
-    }
-    insideMyFn()             // сall funtion inside of big function in the big function
-}
-// insideMyFn()              // eror
-myFn()
