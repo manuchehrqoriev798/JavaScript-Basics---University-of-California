@@ -197,34 +197,77 @@
 
 // function myFn (){}
 // myFn() // underfined
+ 
 
 
 
-// MUTATED
-const personOne = {                             // there is an object with property age and value 19
-    name: 'Manu',
-    age: 19
+
+// // example: MUTATED
+// const personOne = {                             // there is an object with property age and value 19
+//     name: 'Manu',
+//     age: 19
+// }
+// const personTwo = {                             // there is an object with property age and value 18
+//     name: 'Manu',
+//     age: 18
+// }
+// function increaseAgePerson(NameOfPerson){       // function that increases age property by 1 
+//     NameOfPerson.age += 1
+//     return NameOfPerson
+// }
+// increaseAgePerson(personOne)  //mutated to object, NOT GOOD    connecting link of object to the function                    
+// increaseAgePerson(personTwo)  //mutated to object, NOT GOOD    connecting link of object to the function 
+// console.log(personOne.age)
+// console.log(personTwo.age)                      // requesting to show the final result to the screen
+
+
+// // example UNMUTATED
+// function changeNameOfThePerson(changeName){              
+//     const changeNamePerson = Object.assign({}, changeName) // creating copy of the object
+//     changeNamePerson.name = 'Manuchehr'
+//     return changeNamePerson
+// }
+// const changeNamePerson = changeNameOfThePerson(personOne) // connecting copy of object to function
+// console.log(personOne.name)
+// console.log(changeNamePerson.name)
+
+
+
+// example Callback Function
+
+// function printName(){
+//     console.log('Manuchehr')
+// }
+// setTimeout(printName, 1000);
+
+
+
+
+
+// lesson: Global and Local variables
+
+// let a                       // global variable
+// let b                       // global variable 
+// function myFn (){
+//     let b                   // local variable. Name of global and local variables can be the same
+//     a = 10
+//     b = true
+//     console.log(b)
+// } 
+// myFn()
+// console.log(a)             // 10 because of let a in the first
+// console.log(b)             // underfined because let b is local variable and let b in the begining does not have any value
+
+
+
+
+const a = 10                 // constant value
+function myFn (){            // function
+    function insideMyFn(){   // function inside function
+        console.log(a)       // result 10
+        insideMyFn()         // nothing happens because calling function inside of function is nothing
+    }
+    insideMyFn()             // сall funtion inside of big function in the big function
 }
-const personTwo = {                             // there is an object with property age and value 18
-    name: 'Manu',
-    age: 18
-}
-function increaseAgePerson(NameOfPerson){       // function that increases age property by 1 
-    NameOfPerson.age += 1
-    return NameOfPerson
-}
-increaseAgePerson(personOne)  //mutated to object, not good    connecting link of object to the function                    
-increaseAgePerson(personTwo)  //mutated to object, not good    connecting link of object to the function 
-console.log(personOne.age)
-console.log(personTwo.age)                      // requesting to show the final result to the screen
-
-
-// UNMUTATED
-function changeNameOfThePerson(changeName){              
-    const changeNamePerson = Object.assign({}, changeName) // creating copy of the object
-    changeNamePerson.name = 'Manuchehr'
-    return changeNamePerson
-}
-const changeNamePerson = changeNameOfThePerson(personOne) // connecting copy of object to function
-console.log(personOne.name)
-console.log(changeNamePerson.name)
+// insideMyFn()              // eror
+myFn()
