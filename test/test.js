@@ -246,19 +246,18 @@
 
 // lesson: Global and Local variables
 
-let a                       // global variable
-let b                       // global variable 
-function myFn (){
-    let b                   // local variable. Name of global and local variables can be the same
-    b = true                // this b property is new
-    a = 10                  // search for a inside here couldnt find. search outside there is so this a is let a in the begining
-    console.log(b)
-} 
-myFn()                     // true because of console
-console.log(a)             // 10 because of let a in the first
-console.log(b)             // underfined because let b is local variable and let b in the begining does not have any value
-
-
+// let a = 20                  // global variable
+// console.log(a)
+// let b                       // global variable 
+// function myFn (){
+//     let b                   // local variable. Name of global and local variables can be the same
+//     b = true                // this b property is new
+//     a = 10                  // search for a inside here couldnt find. search outside there is so this a is let a in the begining
+//     console.log(b)
+// } 
+// myFn()                     // true because of console
+// console.log(a)             // 10 because of let a in the first
+// console.log(b)             // underfined because let b is local variable and let b in the begining does not have any value
 
 
 
@@ -273,3 +272,19 @@ console.log(b)             // underfined because let b is local variable and let
 // }
 // // insideMyFn()              // eror
 // myFn()
+
+
+
+ 
+// lesson: 'use strict'                 // with this line in the begining it shows eror     
+// function myFn(){
+//     a = 10
+//     console.log(a)
+// }
+// myFn()                          // without 'use strict' it shows 10
+
+
+
+// Lesson: OPERATORS
+
+
