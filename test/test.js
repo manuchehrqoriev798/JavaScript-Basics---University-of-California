@@ -84,7 +84,7 @@
 
 // // lesson:  how to avoid mutation     
 
-// // First: avoides mutation only from the Root Object
+// // 1st avoides mutation only from the Root Object
 // const main = {
 //     name: 'no mutaion yet',
 //     age: 22
@@ -92,7 +92,7 @@
 // const insideMain = main
 // insideMain.address = 'Earth'
 // insideMain.name = 'Inside first option'
-// const mainMutation = Object.assign({}, main)  //Second option:avoides mutation only from the Root Object - const mainMutation = {...main} 
+// const mainMutation = Object.assign({}, main)  //2nd option:avoides mutation only from the Root Object - const mainMutation = {...main} 
 // mainMutation.name = 'Mutation happend'
 // console.log(main.name)                // object without mutation
 // console.log(mainMutation.name)        // new object that is connected to main object but they are not mutated
@@ -106,7 +106,7 @@
 
 
 // console.log('Third option')
-// // Third Option: 
+// // 3rd Option: 
 // const post = {
 //     name: 'no mutaion yet',
 //     age: 22
@@ -287,4 +287,63 @@
 
 // Lesson: OPERATORS
 
+// Boolean (0)                     // false
+// Boolean (4.5)                   // true
+// Boolean ('something')           // true
+// Boolean (undefined)             // false
+// typeof 10                       // "number"
+// typeof 'something'              // "string"
+// typeof false                    // boolean
+// typeof undefined                // "underfined"
+// typeof 10 === "my name"         // false
+// typeof 10 === "number"          // true 
+// typeof x === y                  // if you do not know type of object just use typeof to find rather type of the object
+
+
+// 1st Logicaly
+
+// Operator !. 
+// if it is false becomes true. Also opposite
+
+// console.log(!10)        //false
+// console.log(!0)         //true     
+// console.log(!undefined) //true
+// console.log(!"abc")     //false           
+// console.log(!"")        //true       
+// console.log(!false)     //true  
+// Double !!
+// console.log(!!10)        //true
+// console.log(!!0)         //false     
+// console.log(!!undefined) //false
+// console.log(!!"abc")     //true           
+// console.log(!!"")        //false       
+// console.log(!!false)     //false 
+// console.log(!!!0)        // true
+
+
+// const main = {}             // empty object is still true
+// console.log(!!main)
+
+
+
+
+
+
+// Operator &&.
+// property_1 && property_2. Search for the first false property and that would be the value. Both should be correct and result would be value of Second property.
+console.log(10 && "Manu")          // both correct, so answer is Manu
+console.log(false && "Manu")       // one of them is false, so result would be false  
+console.log(true && false)         // one of them is false, so result would be false   
+
+
+
+
+
+// Operator ||.
+// property_1 || property_2. Search for the first true property and that would be the value. Both should be correct and result would be value of  second property.
+// console.log(10 || "Manu")         // both correct, final value is first true one
+// console.log(false || 0)           // none of them is incorrect, second one is final value. 0
+// console.log(0 || false)           // none of them is incorrect, second one if final value. false
+// console.log(false || 10)          // 10 is first correct so it would be final value          
+// console.log(10 || false)          // 10 is first correct so it would be final value  
 
