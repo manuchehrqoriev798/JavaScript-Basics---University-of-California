@@ -392,27 +392,107 @@
 
 
 // Concatenation of strings. '' + ''
-let c 
-const myName = 'Manuchehr'      
-const mySurname = 'Qoriev'
-c = myName + ' ' + mySurname
-console.log(c)
-f = `${myName} ${mySurname}`      // template string
-console.log(f)
-g = `${'My'} ${'name'} ${'is'} ${'Manuchehr'}${'.'} ${'I'} ${'am'} ${'student'} ${'of'} ${'UCA'}${'.'} `
-console.log(g)
+// let c 
+// const myName = 'Manuchehr'      
+// const mySurname = 'Qoriev'
+// c = myName + ' ' + mySurname
+// console.log(c)
 
-let d = 'Manuchehr' + ' Qoriev'   // there is a space before Qoriev
-console.log(d)
+// f = `${myName} ${mySurname}`      // template string
+// console.log(f)
+// g = `${'My'} ${'name'} ${'is'} ${'Manuchehr'}${'.'} ${'I'} ${'am'} ${'student'} ${'of'} ${'UCA'}${'.'} `
+// console.log(g)
+// h = `${'My name is Manuchehr. I am student of UCA'}`
+// console.log(h)
 
-let e = 'Manuchehr' + ' ' + 'Qoriev'
-console.log(e)
+// let d = 'Manuchehr' + ' Qoriev'   // there is a space before Qoriev
+// console.log(d)
+// let e = 'Manuchehr' + ' ' + 'Qoriev'
+// console.log(e)
+
+// console.log(10 + 'Manuchehr')     // coertion here. 10 from number to string automatically
+// console.log('Manuchehr' + 10)     // coertion here. 10 from number to string automatically
+// console.log(undefined + 'abc')    // undefinedabc. WTF. Always be sure about the type of your values
 
 
 
 
 
 
+// lesson: Functional Expression
+
+// const myFn = {
+//     age: 18,
+//     size: 16, 
+// }
+
+// // function avarage (myFn){
+// //     let avarageNumber
+// //     avarageNumber = (myFn.size + Myfn.age) / 2
+// //     console.log(avarageNumber) 
+// // }
+// // avarage()
+
+// const myFunction = function() {
+//     let a
+//     let b
+//     let c
+//     a = myFn.age 
+//     b = myFn.size
+//     c = (myFn.age + myFn.size) / 2
+//     console.log(c)
+// }
+// myFunction()
+// setTimeout( function() {                      // no name of function here. Anonym funcion
+//     console.log('Final result')
+// }, 1000 )
 
 
 
+
+// // lesson: Arrow funtion
+// const myFn = {
+//     age: 18,
+//     size: 16, 
+// }
+
+// const myFunction = () => {     // like funtion expression with shorter form.    =>
+//     let a
+//     let b
+//     let c
+//     a = myFn.age 
+//     b = myFn.size
+//     c = (myFn.age + myFn.size) / 2
+//     console.log(c)
+// }
+// myFunction()
+// setTimeout( () => {                      
+//     console.log('Final result')
+// }, 1000 )
+
+
+
+// // How to make Arrow function even shorter.
+
+// (a) => {                                 // when it has just one parameter
+//     // body of funcion
+//     // return is used
+// }
+
+// (a, b) => a + b                         // no {} if function has just one expression. Return does not needed. It would be automatically.
+
+
+
+// Lesson: Default Funtion
+
+function mulTwoNumber (first, second = 1){     // second = 1 is a default value
+    console.log(first * second) 
+}
+mulTwoNumber(2, 3)                       // 6 because there are two variables that has been multiplied
+mulTwoNumber(4)                          // 4 because just 4 multiply by default value(1) 
+
+function multiplyTwoNumber (value, multiplier = 2){
+    console.log(value * multiplier)
+} 
+multiplyTwoNumber(2, 3)                 // 6 because there are two variables that has been multiplied
+multiplyTwoNumber(10)                   // 4 because just 4 multiply by default value(1) 
