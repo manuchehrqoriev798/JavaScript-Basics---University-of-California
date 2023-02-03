@@ -448,6 +448,12 @@
 // }, 1000 )
 
 
+// const sayHello = function(name) {
+//     console.log(`Hello, ${name}!`);
+// };
+// sayHello('Manuchehr')
+
+
 
 
 // // lesson: Arrow funtion
@@ -483,16 +489,30 @@
 
 
 
-// Lesson: Default Funtion
 
-function mulTwoNumber (first, second = 1){     // second = 1 is a default value
-    console.log(first * second) 
-}
-mulTwoNumber(2, 3)                       // 6 because there are two variables that has been multiplied
-mulTwoNumber(4)                          // 4 because just 4 multiply by default value(1) 
 
-function multiplyTwoNumber (value, multiplier = 2){
-    console.log(value * multiplier)
-} 
-multiplyTwoNumber(2, 3)                 // 6 because there are two variables that has been multiplied
-multiplyTwoNumber(10)                   // 4 because just 4 multiply by default value(1) 
+// // Lesson: Default Funtion
+
+// function mulTwoNumber (first, second = 1){     // second = 1 is a default value
+//     console.log(first * second) 
+// }
+// mulTwoNumber(2, 3)                       // 6 because there are two variables that has been multiplied
+// mulTwoNumber(4)                          // 4 because just 4 multiply by default value(1) 
+
+// // function multiplyTwoNumber (value, multiplier = 2){
+// //     console.log(value * multiplier)
+// // } 
+// // multiplyTwoNumber(2, 3)                 // 6 because there are two variables that has been multiplied
+// // multiplyTwoNumber(10)                   // 4 because just 4 multiply by default value(1) 
+
+// const myFE = function(value, multiplier = 2){  // Function Expression 
+//     console.log(value * multiplier)
+// }
+// myFE(12, 12)
+// myFE(2)
+
+// const myAF = (one, two = 0) => {             //  Arrow Function
+//     console.log(one * two)
+// }
+// myAF(2, 3)
+// myAF(7)
