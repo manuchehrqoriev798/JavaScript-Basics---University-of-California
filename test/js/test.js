@@ -530,3 +530,28 @@
 // newArticle(newAuthor)   
 // console.table(newArticle(newAuthor))
 
+
+
+
+
+
+// lesson:  Error Handling
+
+// const errorHandling = () => {
+//     throw new Error('Error come to your program !!!')
+// }
+// errorHandling()                                       // till here goes and stops analizing
+// console.log('Continue my child...')                   // did not show up because there were uncought errro in the program
+
+
+const errorHandling = () => {
+    throw new Error('Error come to your program !!!')
+}
+
+try {
+    errorHandling()     
+} catch (error) {
+    console.error(error)
+    console.log(error.massage)
+}
+console.log('continue my child ...')
