@@ -334,16 +334,81 @@
 // b && console.log('Mission passed succesfully !')   // 'Mission passed succesfully !'
 // let c
 // c && console.log('Mission passed succesfully')     // undefined, because c is indefined
+// console.log(10 && 15 && 0 && 'Manu')                  // 0 is the first false value, so it would be the final value
+// console.log(0 && 15 && 0 && 'Manu')                   // 0 is the first false value, so it would be the final value, the rest would be ignored
+// console.log(true && 15 && ' ' && 'Manu')              // all correct so final value is last value
+
+
 
 
 
 // Operator ||.
 // property_1 || property_2. Search for the first true property and that would be the value. Both should be correct and result would be value of  second property.
 // console.log(10 || 'Manu')         // both correct, final value is first true one
-// console.log(false || 0)           // none of them is incorrect, second one is final value. 0
-// console.log(0 || false)           // none of them is incorrect, second one if final value. false
+// console.log(false || 0)           // both of them are incorrect, second one is final value. 0
+// console.log(0 || false)           // none of them are incorrect, second one if final value. false
 // console.log(false || 10)          // 10 is first correct so it would be final value          
 // console.log(10 || false)          // 10 is first correct so it would be final value  
+// console.log(10 || true||30 || ' ')               // first is correct so it would be the final answer and other values would be ignored 
+// console.log(10 || undefined || 0 || '')          // first is correct so it would be the final answer and other values would be ignored 
+// console.log(false || undefined || 15 || 0 || '') // 15 is the first true value, so it would be the final value
+// console.log(false || undefined || '' || false)   // all are incorect, so final value is last value
+
+
+
+// console.log( 0 || false || 10 && false || false)
+
+
+
+
+
+
+// Spread operator. ...
+// const buy = {
+//     size: 14,
+//     request: 'look',
+//     color: 'blue'
+// }
+// const buyButton = {
+//     color: 'white',      // rewrite
+//     ...buy,              // again rewrite index color 
+//     color: 'red',        // again rewrite index color
+//     request: 'buy'       // again rewrite index request
+// }
+// console.table(buyButton) 
+// const orderButton = {
+//     order: 'taxi',
+//     request: 'order'
+// }
+// const buyCombination = {
+//     ...buy,
+//     ...buyButton,
+//     ...orderButton
+// }
+// console.table(buyCombination)
+
+
+
+
+
+// Concatenation of strings. '' + ''
+let c 
+const myName = 'Manuchehr'      
+const mySurname = 'Qoriev'
+c = myName + ' ' + mySurname
+console.log(c)
+f = `${myName} ${mySurname}`      // template string
+console.log(f)
+g = `${'My'} ${'name'} ${'is'} ${'Manuchehr'}${'.'} ${'I'} ${'am'} ${'student'} ${'of'} ${'UCA'}${'.'} `
+console.log(g)
+
+let d = 'Manuchehr' + ' Qoriev'   // there is a space before Qoriev
+console.log(d)
+
+let e = 'Manuchehr' + ' ' + 'Qoriev'
+console.log(e)
+
+
 
 
 
