@@ -15,18 +15,18 @@
 //     mySurname: 'Qoriev',     // key: value,
 //     myAge: 18, 
 //     myGoal: myGoal,          // connecting expression that the name of it and value was given before. Dublicate 
-//     myGoal,                  // short type of Dublicate writing. Recomended to put them in the begining 
+//     // myGoal,                  // short type of Dublicate writing. Recomended to put them in the begining 
 //     myUltimateGoal: myGoal,  // creating new key with value of the expression that was given
 //     myInfo: {                // object inside of object
 //         netWorth: 10^6,
 //         mentalHealth: 'stable'
 //     },                       // don't forget about coma (,) in order to add more property to the object
-//     myChildren: function () {
-//         console.log('hello')
-//     }, 
+//     // myChildren: function () {
+//     //     console.log('hello')
+//     // }, 
 //     myChildren(){
 //         console.log('hello')      // short form of writing a method
-//     },      
+//     }      
 // }
 // console.log(myProfile.myGoal)             // calling property
 // console.log(myProfile.myChildren())       // calling method   //bug: why this is showing underfined and not showing just hello
@@ -516,3 +516,17 @@
 // }
 // myAF(2, 3)
 // myAF(7)
+
+
+
+// const newArticle = (article, time = Date()) => ({  //Implicit return   // bug: did not understand what does this mean. Video Bagdan 4:57 
+//     ...article, 
+//     time: time,  
+// })                                                 //Implicit return
+// const newAuthor = {
+//     id: 1,
+//     author: 'Manuchehr'
+// }
+// newArticle(newAuthor)   
+// console.table(newArticle(newAuthor))
+
