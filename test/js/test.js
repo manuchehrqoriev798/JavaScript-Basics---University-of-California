@@ -595,9 +595,11 @@
 //     length: 3
 // }
 // console.log(myObject)
+// console.log(myObject[0])                          // using [] for number
+// console.log(myObject.length)                      // using . for string
 
-// const myArray = [1, 2, 3]                       // array that has the same values as object. Even though they have the same properties they are object and array.
-// console.log(myArray)
+// // const myArray = [1, 2, 3]                       // array that has the same values as object. Even though they have the same properties they are object and array.
+// // console.log(myArray)
 
 
 
@@ -609,3 +611,14 @@ console.log(myArray[1])
 console.log(myArray[2])
 console.log(myArray[3])
 console.log(myArray.length)
+
+// myArray.length = 7                                   // not recommended to use such kinda influation
+// console.log(myArray)                                 // 3 empty items
+
+myArray[1] = 'changed'
+myArray[4] = 'new item in array'
+console.log(myArray)
+console.log(myArray.length)
+
+
+// Array methods
