@@ -795,24 +795,117 @@
 
 
 // lesson: Switch statement
+// const month = 2
+// switch (month){
+//     case 1:
+//         console.log('January')
+//         break
+//     case 2: 
+//         console.log('February')
+//         break
+//     case 12: 
+//         console.log('December')
+//         break
+//     default:
+//         console.log('Not a winter month')
+// }
 
-const month = 2
-switch (month){
-    case 1:
-        console.log('January')
-        break
-    case 2: 
-        console.log('February')
-        break
-    case 12: 
-        console.log('December')
-        break
-    default:
-        console.log('Not a winter month')
-}
+
 
 
 // lesson: Ternary statement/operator
+
+
+// const value = '12'
+
+// value 
+// ? console.log('Result is true')
+// : console.log('Result is false')
+
+
+
+// const value1 = 7
+// const value2 = 10
+// value1 && value2
+// ? myFn(value1, value2)
+// : myFn2()
+// myFn()
+
+
+// let value = -11
+// console.log(value >= 0 ? value : -value)            // if number is less than zero, it makes it positive
+
+// value = -25
+// const rest = value >= 0 
+// ? value 
+// : -value
+// console.log(rest)
+
+
+
+// lesson: Loop - do not use in arrays
+
+// without loop
+// let i = 0
+// console.log(i)
+// i ++
+// console.log(i)
+// i ++
+// console.log(i)
+// i ++
+// console.log(i)
+// i ++    
+
+// const myArray = [true, 'abc', 2]
+// console.log(myArray[0])
+// console.log(myArray[1])
+// console.log(myArray[2])
+
+// const myObject = {
+//     age: 12,
+//     registered: false,
+//     company: 'IPAM'
+// }
+// console.log(myObject.age)
+// console.log(myObject.registered)
+// console.log(myObject.company)
+
+
+
+// with loop
+for (let i = 0; i < 10; i += 2){                                         
+    console.log(i)
+}
+
+
+const myArray = ['First', 'Second', 'Third', true, false]
+for ( let i = 0; i < myArray.length; i++){
+    console.log(myArray[i])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
