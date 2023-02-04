@@ -603,22 +603,71 @@
 
 
 
-const myArray = new Array(1, 2, true, 'Manuchehr')
-console.log(myArray)
-// console.log(myArray.0)                            // not possible because values of array are number type and calling them through . is not ok. Use []
-console.log(myArray[0])
-console.log(myArray[1])
-console.log(myArray[2])
-console.log(myArray[3])
-console.log(myArray.length)
+// const myArray = new Array(1, 2, true, 'Manuchehr')
+// console.log(myArray)
+// // console.log(myArray.0)                            // not possible because values of array are number type and calling them through . is not ok. Use []
+// console.log(myArray[0])
+// console.log(myArray[1])
+// console.log(myArray[2])
+// console.log(myArray[3])
+// console.log(myArray.length)
 
-// myArray.length = 7                                   // not recommended to use such kinda influation
-// console.log(myArray)                                 // 3 empty items
+// // myArray.length = 7                                   // not recommended to use such kinda influation
+// // console.log(myArray)                                 // 3 empty items
 
-myArray[1] = 'changed'
-myArray[4] = 'new item in array'
-console.log(myArray)
-console.log(myArray.length)
+// myArray[1] = 'changed'
+// myArray[4] = 'new item in array'
+// console.log(myArray)
+// console.log(myArray.length)
+
+
 
 
 // Array methods
+
+// const newMyArray = [1, 2, 3, 4]
+// // console.log(newMyArray)
+// // // push
+// // newMyArray.push(5, true, 'adds')                                      // adds in the end of array one or more element
+// // console.log(newMyArray)
+// // // pop
+// // newMyArray.pop()                                                      // deletes the last element of the arrary. 
+// // console.log(newMyArray)
+// // const removedLastElement = newMyArray.pop()                               // deletes the last element and returns it through a new variable
+// // console.log(removedLastElement)                                           // deleted element
+// // console.log(newMyArray)
+// // // unshift
+// // newMyArray.unshift('add in the begining')                             // adds in the begining of the array. Rare used thing because index of all elements inside the array changes
+// console.log(newMyArray)
+// // shift
+// newMyArray.shift()-                                                   // deletes the first element of the array
+// console.log(newMyArray)
+// const removedFirstElement = newMyArray.shift()
+// console.log(removedFirstElement)
+// console.log(newMyArray)
+
+
+// // forEach - does the statement with each element of the array
+// const newArray = [1, 2, 3]                                          // it does not mutate the original arrary
+// // console.log(newArray)
+// // newArray.forEach((a) => {                                           // this is not shorter form 
+// //     console.log(a*3)                                                // does a  statement with each element of the array
+// // })
+// // console.log(newArray)
+
+// const result = newArray.forEach(a => console.log(a*5))
+// console.log(result)                                                    // in the end there is undifined, because forEach just does the statement and does not return any other value
+// console.log(newArray)
+
+
+// map - does the same as forEach, but returns the result in the form of new array
+const myArray = ['a', 'b', 'c']
+console.log(myArray)                                                  
+// const newArray = myArray.map((a) => {                                 // array function 
+//     return a + 'eeeee'
+// })    
+const newArray = myArray.map(function (a) {                              // Anonym function
+    return a + 'eeeee'
+})                                                                     
+console.log(newArray)                                                     // new array
+console.log(myArray)                                                      // original array
