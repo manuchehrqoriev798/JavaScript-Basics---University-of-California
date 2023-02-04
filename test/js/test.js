@@ -661,13 +661,136 @@
 
 
 // map - does the same as forEach, but returns the result in the form of new array
-const myArray = ['a', 'b', 'c']
-console.log(myArray)                                                  
-// const newArray = myArray.map((a) => {                                 // array function 
+// const myArray = ['a', 'b', 'c']
+// console.log(myArray)                                                  
+// // const newArray = myArray.map((a) => {                                 // array function 
+// //     return a + 'eeeee'
+// // })    
+// const newArray = myArray.map(function (a) {                              // Anonym function
 //     return a + 'eeeee'
-// })    
-const newArray = myArray.map(function (a) {                              // Anonym function
-    return a + 'eeeee'
-})                                                                     
-console.log(newArray)                                                     // new array
-console.log(myArray)                                                      // original array
+// })                                                                     
+// console.log(newArray)                                                     // new array
+// console.log(myArray)                                                      // original array
+
+
+
+
+
+// lesson: Destructuring in JavaScript
+
+// const studentProfile = {
+//     name: 'Sangali',
+//     surname: 'Sangaliev',
+//     age: 18,
+//     hasRegistered: false,
+// }
+// const {name, surname, age, hasRegistered} = studentProfile                   // destructuring an object
+// console.log(name)
+// console.log(surname)
+// console.log(age)
+// console.log(studentProfile)
+
+// const myArray = new Array (1, 2, 3, 4) 
+// const [numberFirst, numberSecond, numberThird, numberFourth] = myArray       // destructuring an array
+// console.log(numberFirst)
+// console.log(numberSecond)
+// console.log(numberThird)
+// console.log(numberFourth)
+// console.log(myArray)
+
+
+// const studentProfile = {
+//     name: 'Sangali',
+//     surname: 'Sangaliev',
+//     age: 18,
+//     hasRegistered: false,                                            // i did not destructured this parameter of the object
+// }
+// const studentInfo = ({name, surname, age}) => {                      // destructuring parameters of a function 
+//     if (!age || age < 0) {
+//         return console.log(`User ${name} ${surname} did not indicate his/her age `)        
+//     }
+//         return console.log(`User ${name} ${surname} is ${age} years old `)
+// }
+// studentInfo(studentProfile)
+
+
+
+
+
+
+// lesson: Conditional statements 
+// if
+// let a = 10
+// if (a > 5) {                                                             // only if expression is true then it does the statement. If no it returns the original value
+//     a +=20
+// }
+// console.log(a)
+
+// const studentName = {
+//     name: 'Manucher'
+// }
+// const {name} = studentName
+// const studentInformation = ({name}) => {
+//     if (!!studentName.name){
+//     console.log(`Welcome to your impire dear ${name}`)
+// }
+// }
+// studentInformation(studentName)
+
+
+// if ... else
+// let a = 18
+
+// if (18 > a > 0){
+//     console.log(`You are an underage, go and drink milk`)
+// } else {
+//     console.log(`You are an adult, good luck in your life`)
+// }
+
+
+
+// if...else if...else
+// let age = 14
+// if (age >= 18){
+//     console.log(` You are an adult, good luck in your life`)
+// } else if (age > 0 && age < 18){
+//     console.log(`You are an underage, go and drink milk`)
+// } else {
+//     console.log(`Are you fucking kinding me. Go and study math`)
+// }
+
+
+
+// let age = 18                                                             // better readable structure rather than if...else if...else
+// if (age >= 18){
+//     console.log(` You are an adult, good luck in your life`)
+// }
+// if (age < 18 && age > 0){
+//     console.log(`You are an underage, go and drink milk`)
+// } 
+
+// if (age <= 0){
+//     console.log(`Are you fucking kinding me. Go and study math`)
+// }
+
+
+
+
+// lesson: Using if in function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
