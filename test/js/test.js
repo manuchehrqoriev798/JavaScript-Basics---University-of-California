@@ -544,14 +544,68 @@
 // console.log('Continue my child...')                   // did not show up because there were uncought errro in the program
 
 
-const errorHandling = () => {
-    throw new Error('Error come to your program !!!')
-}
 
-try {
-    errorHandling()     
-} catch (error) {
-    console.error(error)
-    console.log(error.massage)
-}
-console.log('continue my child ...')
+
+// const errorHandling = () => {                              // you cannot see the result in the terminal. See it in the browser
+//     throw new Error('Error come to your program !!!')
+// }
+// try {
+//     errorHandling()     
+// } catch (error) {
+//     console.error(error)
+//     console.log(error.massage)
+// }
+// console.log('continue my child ...')
+
+
+
+
+
+// // lesson: Statement
+
+// 'abc';
+// a = a + 2;
+// c = a + b;                                   // instruction that does a task
+// c = a + b                                    // expression that returns value
+// d = 'Good ' + 'morning!';
+// myFn(c, d); 
+// console.log('Hey put ; after all instruction (not after blocks)');
+
+
+
+// lesson: Arrays
+// const myArray = [1, 2, 3]
+// console.log(myArray)
+// const myArray2  = new Array (1, 2, 3)
+// console.log(myArray2)
+
+// console.log(myArray === myArray2)             // because array is an object and these two arrays have difirent link that is connected to a part in storage of laptob
+
+// const myArray3 = myArray                      // links are copyid
+// // // const myArray3 = [1, 4]
+// // console.log(myArray3)                      // bug: how to connect two arrays         
+// console.log(myArray === myArray3)             // true. Because both has the link is connected to one object 
+
+
+
+// const myObject = {                               // object that has the same values as array. Even though they have the same properties they are object and array.
+//     0: 1,
+//     1: 2,
+//     2: 3,
+//     length: 3
+// }
+// console.log(myObject)
+
+// const myArray = [1, 2, 3]                       // array that has the same values as object. Even though they have the same properties they are object and array.
+// console.log(myArray)
+
+
+
+const myArray = new Array(1, 2, true, 'Manuchehr')
+console.log(myArray)
+// console.log(myArray.0)                            // not possible because values of array are number type and calling them through . is not ok. Use []
+console.log(myArray[0])
+console.log(myArray[1])
+console.log(myArray[2])
+console.log(myArray[3])
+console.log(myArray.length)
