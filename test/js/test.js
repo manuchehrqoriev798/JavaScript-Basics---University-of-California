@@ -778,26 +778,41 @@
 
 // lesson: Using if in function
 
-const sumPositiveNumbers = (a, b) => {
-    if (typeof a !== 'number' || typeof b !== 'number') {
-        return console.log('One of the arguments is not a number')
-    }           
+// const sumPositiveNumbers = (a, b) => {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return console.log('One of the arguments is not a number')
+//     }           
 
-    if (a <= 0 || b <= 0) {
-        return console.log('One of the number is not positive')
-    }
+//     if (a <= 0 || b <= 0) {
+//         return console.log('One of the number is not positive')
+//     }
 
-    return console.log(a + b)
-}
-sumPositiveNumbers('12', -2)
+//     return console.log(a + b)
+// }
+// sumPositiveNumbers(12, 2)
 
 
 
 
 // lesson: Switch statement
 
+const month = 2
+switch (month){
+    case 1:
+        console.log('January')
+        break
+    case 2: 
+        console.log('February')
+        break
+    case 12: 
+        console.log('December')
+        break
+    default:
+        console.log('Not a winter month')
+}
 
 
+// lesson: Ternary statement/operator
 
 
 
