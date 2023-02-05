@@ -924,22 +924,22 @@
 
 
 
-// For in loop
+// For-in loop
 // const myObject = {                          
 //     status: 'unemployed',
 //     age: 18
 // }
-// for ( const key in myObject){               // for in loop in object
+// for ( const key in myObject){               // for-in loop in object
 //     console.log(key, myObject[key])
 // }
-// Object.keys(myObject).forEach(key =>{      // forEach instead of for in in object
+// Object.keys(myObject).forEach(key =>{      // forEach instead of for-in in object
 //     console.log(key, myObject[key])
 // })
 // Object.values(myObject).forEach(value =>{  // forEach for getting just value of the object
 //     console.log(value)
 // })
 
-// const myArray = [1, 2, 3, 4, 'five']       // for in loop in array
+// const myArray = [1, 2, 3, 4, 'five']       // for-in loop in array
 // // for ( const key in myArray){
 // //     console.log(key, myArray[key])
 // // }
@@ -952,13 +952,26 @@
 // })
 
 
+// For-of loop
 
+const myString = 'Manuchehr'
+// for (const letter of myString){
+//     console.log(letter)
+// }
+const myArray = ['first', 'second', 'third']
 
-
-
-
-
-
+for (const element of myArray){                    // for-of
+    console.log(element)
+}
+myArray.forEach(something => {                     // forEach is better
+    console.log(something)
+})
+for (const index of myArray){                      // this two are showing the same as two previous one, because name here does not matter. All name are value of the elements in array           
+    console.log(index)
+}
+for (const value of myArray){                      // this two are showing the same as two previous one, because name here does not matter. All name are value of the elements in array    
+    console.log(value)
+}
 
 
 
