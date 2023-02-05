@@ -953,7 +953,6 @@
 
 
 // For-of loop
-
 const myString = 'Manuchehr'
 // for (const letter of myString){
 //     console.log(letter)
