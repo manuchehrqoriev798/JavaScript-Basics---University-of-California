@@ -953,27 +953,28 @@
 
 
 // For-of loop
-const myString = 'Manuchehr'
+// const myString = 'Manuchehr'
 // for (const letter of myString){
 //     console.log(letter)
 // }
-const myArray = ['first', 'second', 'third']
+// const myArray = ['first', 'second', 'third']
 
-for (const element of myArray){                    // for-of
-    console.log(element)
-}
-myArray.forEach(something => {                     // forEach is better
-    console.log(something)
-})
-for (const index of myArray){                      // this two are showing the same as two previous one, because name here does not matter. All name are value of the elements in array           
-    console.log(index)
-}
-for (const value of myArray){                      // this two are showing the same as two previous one, because name here does not matter. All name are value of the elements in array    
-    console.log(value)
-}
+// for (const element of myArray){                    // for-of
+//     console.log(element)
+// }
+// myArray.forEach(something => {                     // forEach is better
+//     console.log(something)
+// })
+// for (const index of myArray){                      // this two are showing the same as two previous one, because name here does not matter. All name are value of the elements in array           
+//     console.log(index)
+// }
+// for (const value of myArray){                      // this two are showing the same as two previous one, because name here does not matter. All name are value of the elements in array    
+//     console.log(value)
+// }
 
 
 
+// Lesson: Module 
 
 
 
