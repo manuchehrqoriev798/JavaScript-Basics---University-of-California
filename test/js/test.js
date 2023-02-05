@@ -845,7 +845,7 @@
 
 // lesson: Loop - do not use in arrays
 
-// without loop
+// without for loop
 // let i = 0
 // console.log(i)
 // i ++
@@ -872,31 +872,84 @@
 
 
 
-// with loop
-for (let i = 0; i < 10; i += 2){                                         
-    console.log(i)
-}
+// with for loop
+// for (let i = 0; i < 10; i += 2){                                         
+//     console.log(i)
+// }
 
 
-const myArray = ['First', 'Second', 'Third', true, false]
-for ( let i = 0; i < myArray.length; i++){
-    console.log(myArray[i])
-}
+// const myArray = ['First', 'Second', 'Third', true, false]                             // hard to read and harder to got what does it mean.
+// for ( let i = 0; i < myArray.length; i++){
+//     console.log(myArray[i])
+// }
 
 
-
-
-
-
-
-
-
+// const myForeachArray = ['first', 'second', 'third', 'fourth']                         // easy to read and more undestandable
+// myForeachArray.forEach((element, index) => {
+//     console.log(element, index)                                                      // element means value of element inside of array. Index means index of the element
+// })
 
 
 
+// While loop
+// let i = 0
+// while (i < 10){                            // has limit
+//     console.log(i)
+//     i ++                                   // starts with initial given value. In our case 0
+// }
+// let i = 0
+// while (i < 10){                            
+//     i ++                                   // start with i++ from initial. One more than initial value that was given. In our case it was given 0, but it starts with 1
+//     console.log(i)
+// }
+// let a = 0
+// while (a > 10) {                           // infinity 
+//     console.log(a)
+//     a++
+// }
+
+
+// Do while loop - 
+// let i = 1
+// do {
+//     console.log(i)
+//     i++
+// } while ( i < 0)
+
+// let i = 0                                 // works at least once
+// do {
+//     console.log(i)
+//     i++
+// } while ( i < 0)
 
 
 
+// For in loop
+// const myObject = {                          
+//     status: 'unemployed',
+//     age: 18
+// }
+// for ( const key in myObject){               // for in loop in object
+//     console.log(key, myObject[key])
+// }
+// Object.keys(myObject).forEach(key =>{      // forEach instead of for in in object
+//     console.log(key, myObject[key])
+// })
+// Object.values(myObject).forEach(value =>{  // forEach for getting just value of the object
+//     console.log(value)
+// })
+
+// const myArray = [1, 2, 3, 4, 'five']       // for in loop in array
+// // for ( const key in myArray){
+// //     console.log(key, myArray[key])
+// // }
+// myArray.forEach(function(element){
+//     console.log(element)
+// })
+
+// myArray.forEach(element =>{
+//     console.log(element)
+// })
 
 
 
