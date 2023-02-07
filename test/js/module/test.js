@@ -1004,3 +1004,6 @@ firstComment instanceof CommentClass      // true. How to check rather they are 
 
 
 // Lesson: Inheritance
+
+
+// Important: Overall: have some idea about JS after finishing this course 
