@@ -975,9 +975,32 @@
 
 
 // Lesson: Module 
+// Check module file. All info is there
 
 
 
+// Lesson: Class 
+class CommentClass {
+    constructor (text) {
+        this.text = text
+        this.votesQty = 0
+    }
+    upvote() {
+        this.votesQty = this.votesQty + 1
+    }
+    downvote(){
+        this.votesQty += -1
+    }
+}
+const firstComment = new CommentClass ('It is my first comment in JavaScript')   // calling function of constructor through new
+console.log(firstComment)
+// firstComment.                              // see names of children of firstComment
+
+// console.log(firstComment.upvote())
+firstComment.upvote()
+firstComment.upvote()
+firstComment instanceof Object            // true. How to check rather they are family or not
+firstComment instanceof CommentClass      // true. How to check rather they are family or not
 
 
-
+// Lesson: Inheritance
