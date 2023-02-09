@@ -1093,10 +1093,20 @@
 // console.log(currentYear - bornYear >= age)      // true
 
 
-
-
-
-
+// lesson: Conditional operators
+const levelUnderstandingOfJavascript = 'guru'
+if (levelUnderstandingOfJavascript === 'low' ) {
+    console.log('Study more you need to learn more')
+}
+if (levelUnderstandingOfJavascript === 'medium'){
+    console.log('Keep goind and dont give up')
+}
+if (levelUnderstandingOfJavascript === 'high'){
+    console.log('Good you can understand, but practice more, create more')
+}
+if (levelUnderstandingOfJavascript === 'guru'){
+    console.log('Create you own language')
+}
 
 
 
