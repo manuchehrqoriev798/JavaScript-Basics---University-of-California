@@ -982,27 +982,27 @@
 
 
 // Lesson: Class 
-class CommentClass {
-    constructor (text) {
-        this.text = text
-        this.votesQty = 0
-    }
-    upvote() {
-        this.votesQty = this.votesQty + 1
-    }
-    downvote(){
-        this.votesQty += -1
-    }
-}
-const firstComment = new CommentClass ('It is my first comment in JavaScript')   // calling function of constructor through new
-console.log(firstComment)
-// firstComment.                              // see names of children of firstComment
+// class CommentClass {
+//     constructor (text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
+//     upvote() {
+//         this.votesQty = this.votesQty + 1
+//     }
+//     downvote(){
+//         this.votesQty += -1
+//     }
+// }
+// const firstComment = new CommentClass ('It is my first comment in JavaScript')   // calling function of constructor through new
+// console.log(firstComment)
+// // firstComment.                              // see names of children of firstComment
 
-// console.log(firstComment.upvote())
-firstComment.upvote()
-firstComment.upvote()
-firstComment instanceof Object            // true. How to check rather they are family or not
-firstComment instanceof CommentClass      // true. How to check rather they are family or not
+// // console.log(firstComment.upvote())
+// firstComment.upvote()
+// firstComment.upvote()
+// firstComment instanceof Object            // true. How to check rather they are family or not
+// firstComment instanceof CommentClass      // true. How to check rather they are family or not
 
 
 // Lesson: Inheritance
@@ -1019,29 +1019,78 @@ firstComment instanceof CommentClass      // true. How to check rather they are 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // Important: Course of Vladelin 6 hourse overall 
 
+// lesson: Variable
+// const lastName = 'Qoriev'
+// // lastName = 'Qori'                                  // here
+// console.log(lastName)                              // not posibble because const must not be changed, here
+// let age = 18
+// age = 19
+// console.log(age)                                   // posibble because it is let
+
+// lesson: Mutation
+
+// console.log('You last name, please ' + lastName + '. What about you age ' + age )       // JS identifies age as string value
+// console.log(age)                                                                        // JS identifies age as number
+
+// // alert('Yooo whats up brohter')                                                          // alert is not into JS it is in web and shows something that appears while you open the website
+// // prompt('Write your name')                                                                  // the same thing as alert
+
+
+// lesson: Operators
+// const firstNumber = 24
+// const secondNumber = 12
+
+// let sumOfNumbers = firstNumber + secondNumber 
+
+// console.log(firstNumber + secondNumber)
+// console.log(sumOfNumbers)
+// console.log(firstNumber - secondNumber)
+// console.log(firstNumber / secondNumber)
+// console.log(firstNumber * secondNumber)
+// console.log(firstNumber)
+// console.log(secondNumber)
+
+
+// lesson: Type of data in JS
+// const surName = 'Qoriev'
+// const salary = 0
+// const salaryInAnotherWords = null
+// const preferableSalary = Symbol ('$')
+// const isProgrammer = true
+// const isGuruNow = false
+// const relationship = undefined
+
+// console.log(typeof surName)
+// console.log(typeof salary)
+// console.log(null)                         // if I write: console.log(typeof salaryInAnotherWords it shows it as object not as null)
+// console.log(typeof preferableSalary)
+// console.log(typeof isProgrammer)
+// console.log(typeof isGuruNow)
+// console.log(typeof relationship)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// lesson: Operator Precedence
+// // from least (1) till most precedence (20).       , till ()
+// // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+// const currentYear = 2023
+// const bornYear = 2004
+// const age = 18
+// console.log(currentYear - bornYear >= age)      // true
 
 
 
