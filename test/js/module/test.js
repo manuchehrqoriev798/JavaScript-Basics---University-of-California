@@ -1,3 +1,5 @@
+// Important: Course of Bogdan 12 hours
+
 //lesson: STYLE and NAMING
 // let myName                               // new style name                     // value of let can be changed AMAP
 // myName = 'Manuchehr'                     // its value
@@ -1006,4 +1008,66 @@ firstComment instanceof CommentClass      // true. How to check rather they are 
 // Lesson: Inheritance
 
 
+
+
+
 // Important: Overall: have some idea about JS after finishing this course 
+
+
+
+
+
+
+
+// Important: Course of Vladelin 6 hourse overall 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
