@@ -1155,19 +1155,32 @@
 
 
 // lesson: Object
-const myProfile = {
-    profileName: 'Manuchehr',
-    age: 18, 
-    specialistIn: 'IT',
-    hasWife: false, 
-    education: function (){
-        return 'UCA'
-    }
-}
-console.table(myProfile)
-console.log(myProfile.profileName)
-console.log(myProfile.age)
-console.log(myProfile.education())
+// const myProfile = {
+//     profileName: 'Manuchehr',
+//     age: 18, 
+//     specialistIn: 'IT',
+//     hasWife: false, 
+//     education: function (){
+//         return 'UCA'
+//     }
+// }
+// console.table(myProfile)
+// console.log(myProfile.profileName)
+// console.log(myProfile.age)
+// console.log(myProfile.education())
+// const key = 'hasWife'
+// console.log(myProfile[key])                      // now it is posiible to use [], because key is dinamic 
+// myProfile.profileName = 'Manu'
+// myProfile.numberOfWantedKids = 12
+// console.log(myProfile.profileName)
+// console.log(myProfile.numberOfWantedKids)
+// console.table(myProfile)
+
+// lesson: Number and type of a number
+// const num = 32.23
+// console.log(num)
 
 
+// lesson: DOM
 
+// window.alert('What happend')
