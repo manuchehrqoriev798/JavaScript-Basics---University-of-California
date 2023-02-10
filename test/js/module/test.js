@@ -1094,39 +1094,80 @@
 
 
 // lesson: Conditional operators
-const levelUnderstandingOfJavascript = 'guru'
-if (levelUnderstandingOfJavascript === 'low' ) {
-    console.log('Study more you need to learn more')
+// const levelUnderstandingOfJavascript = 'guru'
+// if (levelUnderstandingOfJavascript === 'low' ) {
+//     console.log('Study more you need to learn more')
+// }
+// if (levelUnderstandingOfJavascript === 'medium'){                           // there is option of using if...esle but i dont use it
+//     console.log('Keep goind and dont give up')
+// }
+// if (levelUnderstandingOfJavascript === 'high'){
+//     console.log('Good you can understand, but practice more, create more')
+// }
+// if (levelUnderstandingOfJavascript === 'guru'){
+//     console.log('Create you own language')
+// }
+
+
+
+// lesson: Ternatry statements
+// const readyToCreate = true
+// readyToCreate ? console.log('Lets go') : console.log('I need a break')
+
+
+// lesson: Logical operators
+// mdn 
+
+// lesson: Function
+// function calcAge (currentYear, bornYear) {
+//     let c
+//     c = currentYear - bornYear
+//     return c
+// }
+// // calcAge (2023, 2004)                         // it works, but does not show on output
+// console.log( calcAge(2023, 2005))
+
+
+// lesson: Arrays
+// const students = ['Prep', 'Fresh', 'Sophomore', 'Junior', 'Senior']                     // the same   
+// // const students = new Array ('Prep', 'Fresh', 'Sophomore', 'Junior', 'Senior')           // the same     
+// console.table(students)
+// console.log(students[0])
+// console.log(students[4])
+// console.log(students.length)
+// students[0] = 'We'
+// console.log(students[0])
+// console.log(students[5])
+// students[5] = 'Seniors after one year'
+// console.log[students[5]]
+// console.table(students)
+
+
+// lesson: Loop
+// const students = ['Prep', 'Fresh', 'Sophomore', 'Junior', 'Senior']              
+// // for (let i = 0; i < students; i++){
+// //     const people = students[i]
+// //     console.log(people)                                              // bug: why it is not showing anything
+// // }                                                                
+// for ( let people of students) {
+//     console.table(people)
+// }
+
+
+// lesson: Object
+const myProfile = {
+    profileName: 'Manuchehr',
+    age: 18, 
+    specialistIn: 'IT',
+    hasWife: false, 
+    education: function (){
+        return 'UCA'
+    }
 }
-if (levelUnderstandingOfJavascript === 'medium'){
-    console.log('Keep goind and dont give up')
-}
-if (levelUnderstandingOfJavascript === 'high'){
-    console.log('Good you can understand, but practice more, create more')
-}
-if (levelUnderstandingOfJavascript === 'guru'){
-    console.log('Create you own language')
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.table(myProfile)
+console.log(myProfile.profileName)
+console.log(myProfile.age)
+console.log(myProfile.education())
 
 
 
